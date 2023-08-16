@@ -618,7 +618,17 @@
               name="user_email"
               placeholder="E-mail"
             />
-            <button class="subscribe-button" type="submit">Subscribe</button>
+            <button class="subscribe-button" type="submit">
+              Subscribe
+              <svg
+                class="subscribe-btn-icon"
+                width="24"
+                height="24"
+                aria-label="subscribe icon"
+              >
+                <use href="./images/icons.svg#icon-subscribe-btn"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -635,6 +645,53 @@
             <use href="./images/icons.svg#icon-close-btn-icon"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <p class="modal-subtitle">
+            Leave your contacts and we will call you back
+          </p>
+          <label class="modal-input-label"
+            >Name<input
+              class="modal-input"
+              type="text"
+              name="user_name"
+              required
+          /></label>
+          <label class="modal-input-label"
+            >Phone<input
+              class="modal-input"
+              type="tel"
+              name="user_phone"
+              required
+          /></label>
+          <label class="modal-input-label"
+            >Email<input
+              class="modal-input"
+              type="email"
+              name="user_email"
+              required
+          /></label>
+          <label class="modal-input-label"
+            >Comment<textarea
+              class="modal-textarea-input"
+              name="user_comment"
+              placeholder="Text input"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
+          <input
+            class="privacy-checkbox"
+            type="checkbox"
+            id="privacy-checkbox"
+            name="user_consent"
+          />
+          <label class="modal-input-label" for="privacy-checkbox">
+            I accept the terms and conditions of the
+            <a>Privacy Policy</a>
+          </label>
+          <button class="modal-submit-button" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
