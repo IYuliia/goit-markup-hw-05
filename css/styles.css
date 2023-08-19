@@ -501,6 +501,7 @@ img {
 }
 
 .subscribe-button {
+  min-width: 165px;
   border: none;
   border-radius: 4px;
   background: var(--accent-color);
@@ -508,7 +509,6 @@ img {
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   text-align: center;
   color: var(--white);
   font-family: "Roboto", sans-serif;
@@ -525,6 +525,7 @@ img {
 }
 
 .subscribe-btn-icon {
+  margin-left: 16px;
   fill: var(--white);
 }
 
