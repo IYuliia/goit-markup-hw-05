@@ -361,13 +361,26 @@
         <div class="subscribe-container">
           <p class="subscribe-subtitle">Subscribe</p>
           <form class="subscribe-form">
-            <input
-              type="email"
-              class="subscribe-input"
-              name="user_email"
-              placeholder="E-mail"
-            />
-            <button class="subscribe-button" type="submit">Subscribe</button>
+            <label class="footer-input-label" for="footer-email">
+              <input
+                type="email"
+                id="footer-input"
+                class="subscribe-input"
+                name="user_email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-button" type="submit">
+              Subscribe
+              <svg
+                class="subscribe-btn-icon"
+                width="24"
+                height="24"
+                aria-label="subscribe icon"
+              >
+                <use href="./images/icons.svg#icon-subscribe-btn"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
